@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head><title>FaceBlockPlus</title>
+<style>
+      body {
+        min-width: 300px;
+        font: normal 14px Helvetica, Arial, sans-serif;
+      }
+      h1 {
+        border-bottom: 1px solid #ccc;
+        font-size: 18px;
+        margin: 0;
+        padding: 5px 10px;
+      }
+      select {
+      	margin-top: 10px;
+      	margin-left: 5px;
+      }
+      ul {
+        list-style-type: none;
+        margin: 5px 0 0;
+        padding: 0;
+      }
+      .footnote {
+        clear: both;
+        text-align: center;
+        font-style: italic;
+	  }
+	  #save {
+	  	display: inline-block;
+	  	margin-left: 10px;
+	  }
+	  #status {
+	  	margin: 10px;
+	  }
+    </style>
+</head>
+<body>
+<h1>What do you want to replace your ads with?</h1>
+
+Options:
+<select id="option">
+ <option value="video">Yourself</option>
+ <option value="random">I'm Feeling Lucky</option>
+ <option value="cat">A Cat</option>
+ <option value="rickroll">Free Money</option>
+ <option value="darude">Chill Vibes</option>
+ <option value='off'>Off (aka Ads)</option>
+</select>
+<button id="save">Save</button>
+<div id="status"></div>
+<p class="footnote">You must hit save and refresh the page to see your change go into effect!</p>
+<script src="popup.js"></script>
+</body>
+</html>

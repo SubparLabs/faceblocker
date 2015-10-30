@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+
+  "name": "f*ck-ad-tech",
+  "description": "Destroy all Ad Tech",
+  "version": "0.1.0",
+  "browser_action": {
+    "default_icon": {
+      "19": "facepalm.png"
+    },
+    "deafult_title": "Face Blocker",
+    "default_popup": "popup.html"  
+  },
+  "icons": {
+    "48": "facepalm.png"
+  },
+  "permissions": [
+  "storage"
+  ],
+  "background": {
+    "page": "background.html",
+    "persistent": true
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "js": [
+        "postload.js"
+      ],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
