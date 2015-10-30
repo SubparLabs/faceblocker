@@ -8,7 +8,7 @@
 1. Go to chrome://extensions/
 2. Check *Developer Mode*
 3. Click on 'Load Unpacked Extension'
-4. Select the 'faceblocker' directory
+4. Select the 'app' directory
 
 ### How to get roulette working
 
